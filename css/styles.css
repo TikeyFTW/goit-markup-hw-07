@@ -41,6 +41,7 @@ a {
 .nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav .logo {
   font-family: "Raleway", sans-serif;
@@ -51,7 +52,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--iris);
   text-decoration: none;
-  margin-left: 16px;
+  margin-left: 0px;
   margin-top: 25.5px;
   margin-bottom: 23.5px;
 }
@@ -89,10 +90,7 @@ a {
 }
 .adress .list {
   display: flex;
-  gap: 40px;
-  padding-left: 332px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  gap: 12px;
   display: none;
 }
 .adress .link {
@@ -108,7 +106,8 @@ a {
 }
 .mobile-menu-button {
   fill: var(--navyblue);
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: 16px;
   border: none;
   background-color: transparent;
 }
@@ -116,8 +115,8 @@ a {
   position: fixed;
   inset: 0;
   translate: -100% 0 0;
-  transition: translate 400ms;
-  background-color: palevioletred;
+  transition: transform 400ms;
+  background-color: var(--white); /* Zmieniono kolor tła na biały */
 }
 .mobile-menu.is-open {
   translate: none;
