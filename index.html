@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Introduction of WebStudio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
       rel="stylesheet"
@@ -35,6 +36,19 @@
             </li>
             <li><a href="" class="link">Contacts</a></li>
           </ul>
+          <button class="mobile-menu-button js-open-menu">
+            <svg width="32px" height="22px" class="nav-svg">
+              <use href="./css/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu js-menu-container">
+            <button class="mobile-menu-close js-close-menu">x</button>
+            <menu class="menu">
+              <li><a href="#">foo</a></li>
+              <li><a href="#">bar</a></li>
+              <li><a href="#">baz</a></li>
+            </menu>
+          </div>
         </nav>
         <address class="adress">
           <ul class="list">
@@ -544,5 +558,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

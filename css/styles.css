@@ -37,6 +37,8 @@ a {
 }
 .header .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav {
   display: flex;
@@ -51,7 +53,9 @@ a {
   letter-spacing: 0.03em;
   color: var(--iris);
   text-decoration: none;
-  margin-right: 76px;
+  margin-left: 16px;
+  margin-top: 25.5px;
+  margin-bottom: 23.5px;
 }
 .header-logo-end {
   color: var(--navyblue);
@@ -59,6 +63,7 @@ a {
 .nav .list {
   display: flex;
   gap: 40px;
+  display: none;
 }
 .nav .list .link {
   font-family: inherit;
@@ -90,6 +95,7 @@ a {
   padding-left: 332px;
   padding-top: 24px;
   padding-bottom: 24px;
+  display: none;
 }
 .adress .link {
   font-size: 16px;
@@ -102,6 +108,23 @@ a {
 .adress .list .link:active {
   color: var(--ocean);
 }
+.mobile-menu-button {
+  fill: var(--navyblue);
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  translate: -100% 0 0;
+  transition: translate 400ms;
+  background-color: palevioletred;
+}
+.mobile-menu.is-open {
+  translate: none;
+}
+
 .main-section {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -291,7 +314,6 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1158px;
 }
 .visually-hidden {
   position: absolute;
@@ -814,4 +836,20 @@ img {
 }
 .modal-button-wrapper {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
 }
