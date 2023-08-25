@@ -107,7 +107,6 @@ a {
 .mobile-menu-button {
   fill: var(--navyblue);
   margin-left: auto;
-  margin-right: 16px;
   border: none;
   background-color: transparent;
 }
@@ -115,8 +114,13 @@ a {
   position: fixed;
   inset: 0;
   translate: -100% 0 0;
-  transition: transform 400ms;
-  background-color: var(--white); /* Zmieniono kolor tła na biały */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--white);
+  width: 428px;
+  height: 796px;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .mobile-menu.is-open {
   translate: none;
