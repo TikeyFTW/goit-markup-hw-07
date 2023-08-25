@@ -286,7 +286,8 @@ menu {
 }
 .footer {
   background-color: var(--navyblue);
-  padding: 100px 0;
+  padding: 96px 0;
+  margin: auto;
 }
 .footer .link {
   font-family: "Raleway", sans-serif;
@@ -538,6 +539,7 @@ img {
 .footer-list {
   display: flex;
   flex-direction: column;
+  gap: 72px;
 }
 .social-media-footer {
   color: var(--white);
@@ -736,7 +738,7 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.48px;
-  width: 264px;
+  width: 398px;
   height: 40px;
   flex-shrink: 0;
   border-radius: 4px;
