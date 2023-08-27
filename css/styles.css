@@ -61,6 +61,8 @@ menu {
   color: var(--navyblue);
 }
 .nav .list {
+  display: flex;
+  gap: 40px;
   display: none;
 }
 .nav .list .link {
@@ -88,6 +90,8 @@ menu {
   font-style: normal;
 }
 .adress .list {
+  display: flex;
+  gap: 12px;
   display: none;
 }
 .adress .link {
@@ -953,17 +957,18 @@ img {
   .footer {
     max-width: 768px;
   }
-}
-.mobile-menu-button {
-  display: none;
-}
-.nav .list {
-  display: flex;
-  gap: 40px;
-}
-.adress .list {
-  display: flex;
-  gap: 12px;
+
+  .mobile-menu-button {
+    display: none;
+  }
+  .nav .list {
+    display: flex;
+    gap: 40px;
+  }
+  .adress .list {
+    display: flex;
+    gap: 12px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .container {
