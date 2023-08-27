@@ -1018,7 +1018,7 @@ img {
   .footer-list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 108px;
   }
   .footer-paragraph {
     text-align: left;
@@ -1031,6 +1031,21 @@ img {
   }
   .newsletter-input {
     width: 264px;
+  }
+  .newsletter-footer {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .newsletter-input {
+    margin-top: 0px;
+  }
+  .newsletter-button {
+    margin-top: 0px;
+  }
+  .footer-list-elements form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
 @media screen and (min-width: 1158px) {
