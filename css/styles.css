@@ -1019,6 +1019,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 93px;
+    gap: 72px 24px;
   }
   .footer-paragraph {
     text-align: left;
