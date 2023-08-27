@@ -61,8 +61,6 @@ menu {
   color: var(--navyblue);
 }
 .nav .list {
-  display: flex;
-  gap: 40px;
   display: none;
 }
 .nav .list .link {
@@ -90,8 +88,6 @@ menu {
   font-style: normal;
 }
 .adress .list {
-  display: flex;
-  gap: 12px;
   display: none;
 }
 .adress .link {
@@ -487,6 +483,7 @@ img {
   display: flex;
   gap: 72px 15px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .consumers .heading {
   margin-bottom: 96px;
@@ -947,6 +944,26 @@ img {
   .container {
     width: 768px;
   }
+  .team {
+    max-width: 768px;
+  }
+  .main-section {
+    max-width: 768px;
+  }
+  .footer {
+    max-width: 768px;
+  }
+}
+.mobile-menu-button {
+  display: none;
+}
+.nav .list {
+  display: flex;
+  gap: 40px;
+}
+.adress .list {
+  display: flex;
+  gap: 12px;
 }
 @media screen and (min-width: 1158px) {
   .container {
