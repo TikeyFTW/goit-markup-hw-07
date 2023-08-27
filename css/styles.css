@@ -30,6 +30,7 @@ menu {
   text-decoration: none;
 }
 .header {
+  margin: 0 auto;
   border-bottom: 1px solid var(--cornflower);
   background: var(--white, #fff);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -42,7 +43,7 @@ menu {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 120px;
 }
 .nav .logo {
   font-family: "Raleway", sans-serif;
@@ -93,11 +94,12 @@ menu {
   display: flex;
   gap: 12px;
   display: none;
+  margin-left: 120px;
 }
 .adress .link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.1667;
+  letter-spacing: 0.48px;
   color: inherit;
 }
 .adress .list .link:hover,
@@ -928,6 +930,9 @@ img {
   .container {
     max-width: 428px;
   }
+  .header {
+    max-width: 428px;
+  }
   .team {
     max-width: 428px;
   }
@@ -946,7 +951,10 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+  }
+  .header {
+    max-width: 768px;
   }
   .team {
     max-width: 768px;
@@ -968,6 +976,61 @@ img {
   .adress .list {
     display: flex;
     gap: 12px;
+    flex-direction: column;
+    margin-top: 12px;
+  }
+  .main-header {
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 1.12px;
+    text-align: center;
+    max-width: 496px;
+  }
+  .main-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .button {
+    margin-top: 36px;
+  }
+  .features .list-elements {
+    width: calc((100% - 24px) / 2);
+    padding: 0;
+  }
+  .features .list {
+    padding: 0;
+    gap: 62px 24px;
+  }
+  .list-heading {
+    text-align: left;
+  }
+  .team .list {
+    gap: 64px 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .consumers .heading {
+    margin-bottom: 72px;
+  }
+  .consumers .list {
+    gap: 72px 24px;
+  }
+  .footer-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-paragraph {
+    text-align: left;
+  }
+  .social-media-footer {
+    text-align: left;
+  }
+  .newsletter-display {
+    flex-direction: row;
+  }
+  .newsletter-input {
+    width: 264px;
   }
 }
 @media screen and (min-width: 1158px) {
