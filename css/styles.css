@@ -1018,7 +1018,7 @@ img {
   .footer-list {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 108px;
+    margin-left: 93px;
   }
   .footer-paragraph {
     text-align: left;
@@ -1046,6 +1046,9 @@ img {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+  .consumers-icons {
+    padding: 15.2px 31.2px 15.2px 31.2px;
   }
 }
 @media screen and (min-width: 1158px) {
