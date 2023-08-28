@@ -689,7 +689,7 @@ img {
 }
 .modal {
   position: absolute;
-  width: 408px;
+  max-width: 392px;
   border-radius: 4px;
   background: var(--dairy);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -1047,6 +1047,9 @@ img {
   }
   .consumers-icons {
     padding: 15.2px 31.2px 15.2px 31.2px;
+  }
+  .modal {
+    max-width: 408px;
   }
 }
 @media screen and (min-width: 1158px) {
