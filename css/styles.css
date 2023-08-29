@@ -586,17 +586,6 @@ img {
   gap: 16px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icons-link:focus,
-.footer-icons-link:hover {
-  width: 100%;
-  height: 100%;
-  background-color: var(--green);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
 
 .studio-header-underline {
   font-family: inherit;
@@ -1179,5 +1168,16 @@ img {
   }
   .team .list {
     flex-wrap: nowrap;
+  }
+  .footer-icons-link:focus,
+  .footer-icons-link:hover {
+    width: 100%;
+    height: 100%;
+    background-color: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
 }
