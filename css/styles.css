@@ -703,7 +703,6 @@ img {
 }
 .modal {
   position: absolute;
-  max-width: 100%;
   border-radius: 4px;
   background: var(--dairy);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -713,6 +712,9 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px;
+  width: 95%;
+  max-width: 392px;
+  overflow: scroll;
 }
 .modal-close-button {
   position: absolute;
@@ -833,7 +835,7 @@ img {
   position: relative;
   margin-top: 4px;
   fill: var(--navyblue);
-  width: 360px;
+  margin-bottom: 8px;
 }
 .input-svg {
   position: absolute;
@@ -850,13 +852,6 @@ img {
 }
 .modal-input:focus + .input-svg {
   fill: var(--iris);
-}
-.modal-form {
-  display: flex;
-  width: 360px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
 }
 
 .modal-input-textarea {
@@ -912,7 +907,7 @@ img {
 .modal-checkbox-wrapper {
   display: flex;
   gap: 8px;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 .modal-form-button {
   color: var(--white);
@@ -927,6 +922,9 @@ img {
   border: none;
   margin-top: 16px;
   padding: 16px 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .modal-form-button:hover,
 .modal-form-button:focus {
