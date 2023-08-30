@@ -928,24 +928,11 @@ img {
   .container {
     max-width: 428px;
   }
-  .header {
-    max-width: 428px;
-  }
-  .team {
-    max-width: 428px;
-  }
-  .main-section {
-    max-width: 428px;
-  }
+
   .mobile-menu {
     max-width: 428px;
   }
-  .footer {
-    max-width: 428px;
-  }
-  .team {
-    max-width: 428px;
-  }
+
   .modal {
     max-width: 392px;
   }
@@ -957,11 +944,8 @@ img {
   .header {
     max-width: 768px;
   }
-  .team {
-    max-width: 768px;
-  }
+
   .main-section {
-    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -979,9 +963,6 @@ img {
         ),
         url(../images/mainbackgroundtablet2x.jpg);
     }
-  }
-  .footer {
-    max-width: 768px;
   }
 
   .mobile-menu-button {
@@ -1075,7 +1056,7 @@ img {
     overflow: hidden;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
   }
@@ -1179,5 +1160,8 @@ img {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+  }
+  .consumer .list {
+    flex-wrap: nowrap;
   }
 }
