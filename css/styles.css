@@ -703,7 +703,6 @@ img {
   padding: 72px 24px 24px;
   width: 95%;
   max-width: 392px;
-  overflow: scroll;
 }
 .modal-close-button {
   position: absolute;
@@ -804,6 +803,7 @@ img {
   color: var(--lightslate);
   font-size: 12px;
   letter-spacing: 0.48px;
+  display: block;
 }
 .modal-input {
   width: 100%;
