@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="Introduction of WebStudio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
       rel="stylesheet"
@@ -50,6 +51,68 @@
             </li>
           </ul>
         </address>
+        <button class="mobile-menu-button js-open-menu">
+          <svg width="32px" height="22px" class="nav-svg">
+            <use href="./css/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu js-menu-container">
+          <button class="modal-close-button js-close-menu">
+            <svg class="mobile-close-icon" width="8px" height="8px">
+              <use href="./css/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <menu class="menu">
+            <li><a class="link" href="./index.html">Studio</a></li>
+            <li>
+              <a class="menu-highlight" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="link" href="#">Contact</a></li>
+          </menu>
+
+          <ul class="mobile-adress">
+            <li>
+              <a href="tel:+110001111111" class="adress-highlight"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-socialmedia">
+            <li class="footer-icons-listitems">
+              <a class="footer-icons-link">
+                <svg class="footer-icon" width="24px" height="24px">
+                  <use href="./css/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-listitems">
+              <a class="footer-icons-link">
+                <svg class="footer-icon" width="24px" height="24px">
+                  <use href="./css/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-listitems">
+              <a class="footer-icons-link">
+                <svg class="footer-icon" width="24px" height="24px">
+                  <use href="./css/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-listitems">
+              <a class="footer-icons-link">
+                <svg class="footer-icon" width="24px" height="24px">
+                  <use href="./css/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -74,6 +137,7 @@
                     alt="Banking App Interface Concept"
                     width="360"
                     height="300"
+                    class="portfolio-photo"
                   />
                   <p class="app-paragraph">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -95,6 +159,7 @@
                     alt="Cashless Payment"
                     width="360"
                     height="300"
+                    class="portfolio-photo"
                   />
                   <p class="app-paragraph">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -116,6 +181,7 @@
                     alt="Meditation App"
                     width="360"
                     height="300"
+                    class="portfolio-photo"
                   />
                   <p class="app-paragraph">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -137,6 +203,7 @@
                     alt="Taxi Service"
                     width="360"
                     height="300"
+                    class="portfolio-photo"
                   />
                   <p class="app-paragraph">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -158,6 +225,7 @@
                     alt="Screen Illustrations"
                     width="360"
                     height="300"
+                    class="portfolio-photo"
                   />
                   <p class="app-paragraph">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -179,6 +247,7 @@
                     alt="Online Courses"
                     width="360"
                     height="300"
+                    class="portfolio-photo"
                   />
                   <p class="app-paragraph">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -201,6 +270,7 @@
                     alt="Instagram Stories Concept"
                     width="360"
                     height="300"
+                    class="portfolio-photo"
                   />
                   <p class="app-paragraph">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -222,6 +292,7 @@
                     alt="Organic Food"
                     width="360"
                     height="300"
+                    class="portfolio-photo"
                   />
                   <p class="app-paragraph">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -243,6 +314,7 @@
                     alt="Fresh Coffee"
                     width="360"
                     height="300"
+                    class="portfolio-photo"
                   />
                   <p class="app-paragraph">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -346,5 +418,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
